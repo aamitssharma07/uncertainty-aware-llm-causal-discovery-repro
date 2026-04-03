@@ -1,0 +1,15 @@
+{
+  "level": 1,
+  "field": "medicine",
+  "context": "Attribute names only — no semantic content.",
+  "variables": [
+    { "name": "dysp" },
+    { "name": "tub" },
+    { "name": "lung" },
+    { "name": "bronc" },
+    { "name": "asia" },
+    { "name": "smoke" },
+    { "name": "xray" },
+    { "name": "either" }
+  ]
+}

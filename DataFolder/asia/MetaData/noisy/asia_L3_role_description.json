@@ -1,0 +1,63 @@
+{
+  "level": 3,
+  "field": "medicine",
+  "context": "Attribute names with labels, discrete levels, variable role (risk factor / disease / symptom / test / derived), and brief clinical description — functional context without explicit causal direction.",
+  "variables": [
+    {
+      "name": "dysp",
+      "label": "Dyspnoea",
+      "role": "symptom",
+      "levels": ["yes", "no"],
+      "description": "Shortness of breath reported by the patient; a respiratory symptom that can arise from multiple pulmonary or airway conditions."
+    },
+    {
+      "name": "tub",
+      "label": "Tuberculosis",
+      "role": "disease",
+      "levels": ["yes", "no"],
+      "description": "Pulmonary tuberculosis caused by Mycobacterium tuberculosis; a chronic infectious disease affecting the lungs."
+    },
+    {
+      "name": "lung",
+      "label": "Lung cancer",
+      "role": "disease",
+      "levels": ["yes", "no"],
+      "description": "Primary malignancy of the lung; associated with long-term exposure to carcinogens including tobacco smoke."
+    },
+    {
+      "name": "bronc",
+      "label": "Bronchitis",
+      "role": "disease",
+      "levels": ["yes", "no"],
+      "description": "Inflammation of the bronchial tubes causing cough and airflow obstruction; strongly associated with smoking."
+    },
+    {
+      "name": "asia",
+      "label": "Visit to Asia",
+      "role": "risk_factor",
+      "levels": ["yes", "no"],
+      "description": "Recent travel to Asia; a geographic exposure variable that elevates the prior probability of tuberculosis due to higher regional prevalence."
+    },
+    {
+      "name": "smoke",
+      "label": "Smoking",
+      "role": "risk_factor",
+      "levels": ["yes", "no"],
+      "description": "Current or recent tobacco smoking status; a primary risk factor for both lung cancer and bronchitis."
+    },
+    {
+      "name": "xray",
+      "label": "Chest X-ray abnormal",
+      "role": "diagnostic_test",
+      "levels": ["yes", "no"],
+      "description": "Result of a chest radiograph; abnormal (positive) findings can indicate tuberculosis, lung cancer, or other pulmonary pathology but lack specificity."
+    },
+    {
+      "name": "either",
+      "label": "Tuberculosis or lung cancer present",
+      "role": "derived",
+      "levels": ["yes", "no"],
+      "description": "Binary intermediate node indicating the logical disjunction of tuberculosis and lung cancer; used to route their combined influence on downstream variables."
+    }
+  ]
+}

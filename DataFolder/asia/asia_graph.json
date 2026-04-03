@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    "asia",
+    "tub",
+    "smoke",
+    "lung",
+    "bronc",
+    "either",
+    "xray",
+    "dysp"
+  ],
+  "edges": [
+    {
+      "source": "asia",
+      "target": "tub"
+    },
+    {
+      "source": "tub",
+      "target": "either"
+    },
+    {
+      "source": "smoke",
+      "target": "lung"
+    },
+    {
+      "source": "smoke",
+      "target": "bronc"
+    },
+    {
+      "source": "lung",
+      "target": "either"
+    },
+    {
+      "source": "bronc",
+      "target": "dysp"
+    },
+    {
+      "source": "either",
+      "target": "xray"
+    },
+    {
+      "source": "either",
+      "target": "dysp"
+    }
+  ]
+}

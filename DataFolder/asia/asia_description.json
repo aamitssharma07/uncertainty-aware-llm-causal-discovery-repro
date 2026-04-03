@@ -1,0 +1,39 @@
+{
+  "reference": "S. Lauritzen, D. Spiegelhalter (1988). \"Local Computation with Probabilities on Graphical Structures and their Application to Expert Systems (with discussion).\" Journal of the Royal Statistical Society: Series B, 50(2):157–224.",
+  "field": "medicine",
+  "context": "Small synthetic dataset about lung diseases (tuberculosis, lung cancer, bronchitis) and shortness of breath (dyspnoea). A recent visit to Asia increases the chance of tuberculosis, while smoking is a risk factor for lung cancer and bronchitis. Chest X-ray and dyspnoea do not discriminate well between lung cancer and tuberculosis in this toy model.",
+  "variables": [
+    {
+      "name": "dysp",
+      "description": "Dyspnoea (shortness of breath); whether the patient has dyspnoea (levels: yes, no)."
+    },
+    {
+      "name": "tub",
+      "description": "Tuberculosis; whether the patient has tuberculosis (levels: yes, no)."
+    },
+    {
+      "name": "lung",
+      "description": "Lung cancer; whether the patient has lung cancer (levels: yes, no)."
+    },
+    {
+      "name": "bronc",
+      "description": "Bronchitis; whether the patient has bronchitis (levels: yes, no)."
+    },
+    {
+      "name": "asia",
+      "description": "Visit to Asia; whether the patient has recently visited Asia (levels: yes, no)."
+    },
+    {
+      "name": "smoke",
+      "description": "Smoking; whether the patient smokes (levels: yes, no)."
+    },
+    {
+      "name": "xray",
+      "description": "Chest X-ray; whether the chest X-ray result is positive/abnormal (levels: yes, no)."
+    },
+    {
+      "name": "either",
+      "description": "Tuberculosis versus lung cancer/bronchitis; an intermediate binary indicator used in the model (levels: yes, no)."
+    }
+  ]
+}

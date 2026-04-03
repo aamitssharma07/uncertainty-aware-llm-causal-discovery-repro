@@ -1,0 +1,23 @@
+{
+  "level": 2,
+  "field": "medicine",
+  "context": "Attribute names with human-readable labels and discrete state levels — no causal or clinical context.",
+  "variables": [
+    { "name": "dysp", "label": "Dyspnoea", "levels": ["yes", "no"] },
+    { "name": "tub", "label": "Tuberculosis", "levels": ["yes", "no"] },
+    { "name": "lung", "label": "Lung cancer", "levels": ["yes", "no"] },
+    { "name": "bronc", "label": "Bronchitis", "levels": ["yes", "no"] },
+    { "name": "asia", "label": "Visit to Asia", "levels": ["yes", "no"] },
+    { "name": "smoke", "label": "Smoking", "levels": ["yes", "no"] },
+    {
+      "name": "xray",
+      "label": "Chest X-ray abnormal",
+      "levels": ["yes", "no"]
+    },
+    {
+      "name": "either",
+      "label": "Tuberculosis or cancer",
+      "levels": ["yes", "no"]
+    }
+  ]
+}

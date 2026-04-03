@@ -1,0 +1,21 @@
+dataset: ./DataFolder/asia
+out_root: outputs
+
+models:
+  - openai/gpt-4.1-mini
+  - openai/gpt-4.1
+  - openai/gpt-4o
+  - openai/gpt-5.2
+  - openai/gpt-oss-20b
+
+temperature: 0.0
+max_tokens:
+  - 8000
+  - 12000
+  - 16000
+  - 25000
+  - 30000
+
+threshold: 0.7
+alpha: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+beta: [0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
