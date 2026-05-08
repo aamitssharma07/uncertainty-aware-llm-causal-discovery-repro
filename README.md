@@ -20,6 +20,13 @@ The package is intentionally small and excludes unrelated datasets, prompt varia
 ## Included Files
 
 ### Data
+`DataFolder/ci_test_data`
+- Inclues 5 datasets wherein `asia` and `sachs` are of type small, `alarm` and `insurance` are of type medium, and `hailfinder` is of type large.
+- `<dataset_name>_seed<seed_no>.csv` contains p-value obtained from all CI tests between a pair of nodes.
+- `<dataset_name>_filtered_seed<seed_no>.csv` contains maximum p-value obtained from CI tests between a pair of nodes. (Note: Target information for LLM inference)
+- `<dataset_name>_seed<seed_no>_<drop_perc>.csv` contains p-value obtained from all CI tests between a pair of nodes after removing `drop_perc` records from the original file .
+- `<dataset_name>_filtered_seed<seed_no>_<drop_perc>.csv` contains maximum p-value obtained from CI tests between a pair of nodes after removing `drop_perc` records from the original file (Note: Target information for LLM inference)
+
 
 `DataFolder/asia/`
 
